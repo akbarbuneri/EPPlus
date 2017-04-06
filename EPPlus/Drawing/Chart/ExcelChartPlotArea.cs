@@ -42,14 +42,10 @@ namespace OfficeOpenXml.Drawing.Chart
     public sealed class ExcelChartPlotArea :  XmlHelper
     {
         ExcelChart _firstChart;
-        XmlNode _plotAreaNode;
-        XmlNamespaceManager _nsManager;
         internal ExcelChartPlotArea(XmlNamespaceManager ns, XmlNode node, ExcelChart firstChart)
            : base(ns,node)
        {
            _firstChart = firstChart;
-           _plotAreaNode = node;
-           _nsManager = ns;
        }
 
         ExcelChartCollection _chartTypes;
@@ -87,20 +83,6 @@ namespace OfficeOpenXml.Drawing.Chart
                 }
                 return _border;
             }
-        }
-        public void ReSize(string width, string height)
-        {
-            var _width = this._plotAreaNode.SelectNodes("c:layout/c:manualLayout/c:w", _nsManager);
-            var _height = this._plotAreaNode.SelectNodes("c:layout/c:manualLayout/c:h", _nsManager);
-            if (_width != null)
-            {
-                _width.Item(0).Attributes["val"].Value = width;
-            }
-            if (_height != null)
-            {
-                _height.Item(0).Attributes["val"].Value = height;
-            }
-            int a = 0;
         }
     }
 }
