@@ -1,0 +1,6 @@
+D:\PersonalProjects\EPPlus\EPPlus\bin\Debug\EPPlus.XML
+D:\PersonalProjects\EPPlus\EPPlus\bin\Debug\EPPlus.dll
+D:\PersonalProjects\EPPlus\EPPlus\bin\Debug\EPPlus.pdb
+D:\PersonalProjects\EPPlus\EPPlus\obj\Debug\EPPlus.csprojResolveAssemblyReference.cache
+D:\PersonalProjects\EPPlus\EPPlus\obj\Debug\EPPlus.dll
+D:\PersonalProjects\EPPlus\EPPlus\obj\Debug\EPPlus.pdb
